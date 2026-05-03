@@ -1,18 +1,5 @@
 .first-image {
-    width: 350px;
-    display: flex;
-}
-
-.search-bar {
-    display: block;
-    width: 400px;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 20px;
+    width: 100%;
 }
 
 p {
@@ -44,27 +31,67 @@ p {
     display:grid;
     grid-template-columns: 50px 1fr;
 }
-.video-preview{
-    display:inline-block;
-    width:350px;
-    vertical-align:top;
-    margin-right:18px;
-}
+
 .pfp{
     vertical-align:top;
     margin-top :8px;
     margin-right:5px;
 }
 .video-description{
-    width:300px;
+    width:100%px;
 }
 .channelpf{
     width:90%;
     border-radius:50%;
 }
 .all-videos{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 35px;
+    padding: 16px;
+}
+.header{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+}
+.middle{
+    background-color: lightpink;
     display:flex;
-    flex-wrap:wrap;
-    justify-content: right;
-    row-gap: 40px;
+    flex:1;
+    margin-left: 295px;
+    margin-right:395px;
+    max-width:400px;
+}
+.left{
+    background-color:lightblue;
+    width:200px;
+}
+.right{
+    display:flex;
+    flex:1;
+    background-color:lightgreen;
+    width:200px;
+
+}
+.youtube-logo{
+    width: 100px;
+    margin-left: 20px;
+}
+.search-bar{
+    display:flex;
+    height: 40px;
+    flex: 1;
+    width: 0;
+    min-width: 0;
+    padding-left: 12px;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    border: 1px solid rgb(204, 204, 204);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: inset 0px 1px 2px rgb(238, 238, 238);
 }
