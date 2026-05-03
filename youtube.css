@@ -45,14 +45,16 @@ p {
     border-radius:50%;
 }
 .all-videos{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    /* Auto-fit columns but never more than 4 columns.
+       min width is the larger of 20% (so 4 columns max) or 220px (so columns collapse on small screens). */
+    grid-template-columns: repeat(auto-fit, minmax(max(20%, 220px), 1fr));
     column-gap: 16px;
     row-gap: 35px;
     padding: 16px;
 }
 .header{
-        height: 50px;
+        height: 57px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -62,19 +64,21 @@ p {
     background-color: lightpink;
     display:flex;
     flex:1;
-    margin-left: 295px;
-    margin-right:395px;
-    max-width:400px;
+    justify-content: center;
+    max-width:470px;
+    margin-left: 480px;
+    margin-right:340px;
+
 }
 .left{
     background-color:lightblue;
-    width:200px;
+    width:120px;
+
 }
 .right{
-    display:flex;
-    flex:1;
     background-color:lightgreen;
-    width:200px;
+    width:240px;
+
 
 }
 .youtube-logo{
